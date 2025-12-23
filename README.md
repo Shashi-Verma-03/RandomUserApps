@@ -1,6 +1,71 @@
-# Getting Started with Create React App
+# React 18 TypeScript Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a **React 18 application developed using TypeScript (.tsx)**, created as part of a technical assignment.  
+The project demonstrates practical experience with **modern React concepts**, **API integration**, **state management using hooks**, and **deployment using GitHub Pages**.
+
+---
+
+## Project Summary
+
+The application fetches user data from a given API endpoint and displays the user’s **full name** and **email address**.  
+Data is handled asynchronously, stored in **localStorage**, and refreshed at the component level without triggering a page reload.
+
+This project follows **clean code practices**, **type safety**, and **React best practices**, making it suitable for production-ready frontend applications.
+
+---
+
+## Key Skills Demonstrated
+
+- React 18 with Functional Components
+- TypeScript with strict typings
+- API integration using Axios
+- Async/Await for asynchronous operations
+- React Hooks (`useState`, `useEffect`)
+- Component-level state refresh
+- Browser Local Storage handling
+- GitHub Pages deployment
+
+---
+
+## Assignment Requirements Implemented
+
+- Fetch user data using an npm-based library (Axios)
+- Handle API calls using async/await
+- Destructure API responses and extract required fields
+- Persist data in localStorage
+- Implement a Refresh button to re-fetch data without page reload
+- Build the application using `.tsx` with proper TypeScript typings
+- Follow modular and readable project structure
+
+---
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Axios
+- HTML5 / CSS3
+- GitHub Pages
+
+---
+
+## Project Setup
+
+### Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+- GitHub account
+
+---
+
+## Create Project
+
+```bash
+npx create-react-app my-app --template typescript
+cd my-app
+npm start
+
 
 ## Available Scripts
 
@@ -38,6 +103,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+### `npm run deploy`
+
+Deploys the production build to GitHub Pages and makes the application publicly accessible.
 
 ## Learn More
 
