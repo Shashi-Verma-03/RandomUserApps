@@ -1,0 +1,80 @@
+.user-card {
+  width: 320px;
+  padding: 24px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-card h2 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.user-card p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.user-card button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-card button:hover {
+  background-color: #1565c0;
+}
+
+.user-card button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+.error {
+  margin: 12px 0;
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+/* loading style */
+.spinner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%, #f03355) content-box;
+  -webkit-mask: repeating-conic-gradient(
+      #0000 0deg,
+      #000 1deg 20deg,
+      #0000 21deg 36deg
+    ),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - var(--b) - 1px),
+      #000 calc(100% - var(--b))
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l4 1s infinite steps(10);
+}
+@keyframes l4 {
+  to {
+    transform: rotate(1turn);
+  }
+}
